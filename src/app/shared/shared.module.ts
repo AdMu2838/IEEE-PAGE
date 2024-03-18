@@ -14,7 +14,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     ],
     exports: [
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        CarouselComponent
     ],
     imports: [
         CommonModule,
