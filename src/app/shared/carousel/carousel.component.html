@@ -1,21 +1,24 @@
-
-<div class="dsc-carousel" [ngStyle]="{'min-height': finalHeight}">
-  <div class="dsc-carousel_btns">
-    <i class="fa fa-chevron-circle-left" (click)="setBack()"></i>
-    <i class="fa fa-chevron-circle-right" (click)="setNext()"></i>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button *ngFor="let slide of slides; let i = index" type="button"
+    data-bs-target="#carouselExampleCaptions" [attr.data-bs-slide-to]="i"
+    [class.active]="i === 0" aria-current="true" [attr.aria-label]="'Slide ' + (i+1)"></button>
   </div>
-  <div class="dsc-carousel_content">
-    <ng-container *ngFor="let section of items">
-      <div class="das-carousel_content-item" [ngStyle]="{'background-image':'url(' + section.image + ')',
-      'margin-left': section.marginLeft + '%'}">
-        <h1>{{section.title?.first}}<span>{{section.title?.second}}</span></h1>
-        <p>{{section.subtitle}}</p>
+  <div class="carousel-inner">
+    <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0">
+      <img [src]="slide.image" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>{{ slide.title }}</h1>
+        <h1>{{ slide.description }}</h1>
       </div>
-    </ng-container>
-  </div>
-  <div class="dsc-carousel_steps">
-    <div class="dsc-carousel_steps-step dsc-carousel_steps-step-{{currentPosition===item.id ? 'active':''}}"
-         *ngFor="let item of items" (click)="setCurrentPosition(item.id)">
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
