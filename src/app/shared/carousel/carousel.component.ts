@@ -8,11 +8,9 @@ import {Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angul
 })
 export class CarouselComponent implements OnInit{
 //custom properties
-  @Input() slides: { image: string, title: string, description: string }[] = [];
+  @Input() slides: { image: string, title?: string, description?: string }[] = [];
   @Input() carouselWidth: string = '100%';
-
-
-
+  @Input() carouselId: string = 'carouselExampleInterval';
 
 
   constructor() { }
