@@ -1,13 +1,14 @@
 .carousel,
 .carousel-inner,
 .carousel-item {
-  height: 100vh;
+  height: 60vh;
 
 }
 
 
 .carousel-item img {
   height: 100%;
-  object-fit: cover;
+
   filter: brightness(70%);
 }
+

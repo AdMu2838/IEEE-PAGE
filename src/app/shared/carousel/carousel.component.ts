@@ -9,7 +9,9 @@ import {Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angul
 export class CarouselComponent implements OnInit, OnDestroy{
 //custom properties
   @Input() slides: { image: string, title: string, description: string }[] = [];
+  @Input() carouselWidth: string = '100%';
   @ViewChild('carousel') carousel: ElementRef | undefined;
+
   currentIndex = 0;
   interval: any;
 
@@ -27,6 +29,7 @@ export class CarouselComponent implements OnInit, OnDestroy{
         this.carousel.nativeElement.querySelectorAll('.carousel-item')[this.currentIndex].classList.add('active');
       }
     }, 2000);
+
 
   }
   goToSlide(index: number) {

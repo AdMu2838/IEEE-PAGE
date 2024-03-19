@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" #carousel>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" #carousel [style.width]="carouselWidth">
   <div class="carousel-indicators">
     <button *ngFor="let slide of slides; let i = index" type="button"
     data-bs-target="#carouselExampleCaptions" [attr.data-bs-slide-to]="i"
