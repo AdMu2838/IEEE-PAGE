@@ -1,0 +1,74 @@
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+
+}
+.contenedor h1{
+  text-align: center;
+  margin: 20px 0;
+}
+.evento-button {
+  width: 30%;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FFA300;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.evento-button:hover {
+  background-color: #009CA6;
+}
+
+.card{
+  width: 30%;
+  box-shadow: 5px 5px 20px black;
+  margin: 20px;
+  overflow: hidden;
+
+}
+.card img {
+  height: 100%;
+}
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .intro{
+  height: 50%;
+  margin-top: 50%;
+}
+.card:hover p{
+  visibility: visible;
+  opacity: 1;
+}
+.subcomite{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 400px;
+}
+.intro{
+  height: 25%;
+  width: 100%;
+  margin-top: 75%;
+  box-sizing: border-box;
+  position: absolute;
+  background: rgb(27,27,27,.5);
+  color: white;
+  padding: 7px;
+}
+
+.intro p{
+  visibility: hidden;
+  opacity: 0;
+}
+.intro h2{
+  text-align: center;
+
+}
+
