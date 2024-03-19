@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,33 @@ import {Component, Input} from '@angular/core';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit, OnDestroy{
 //custom properties
   @Input() slides: { image: string, title: string, description: string }[] = [];
+  @ViewChild('carousel') carousel: ElementRef | undefined;
+  currentIndex = 0;
+  interval: any;
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.startCarousel();
+  }
+
+  startCarousel() {
+    this.interval = setInterval(() => {
+      if (this.carousel) {
+        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+        this.carousel.nativeElement.querySelector('.carousel-item.active').classList.remove('active');
+        this.carousel.nativeElement.querySelectorAll('.carousel-item')[this.currentIndex].classList.add('active');
+      }
+    }, 2000);
+
+  }
+  goToSlide(index: number) {
+    this.currentIndex = index;
+  }
+  ngOnDestroy() {
+    clearInterval(this.interval);
+  }
 }
