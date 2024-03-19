@@ -24,6 +24,6 @@ import {CarouselComponent} from "./shared/carousel/carousel.component";
 
   ],
   providers: [],
-  bootstrap: [AppComponent, CarouselComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

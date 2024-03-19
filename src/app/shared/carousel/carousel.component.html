@@ -1,12 +1,7 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" #carousel [style.width]="carouselWidth">
-  <div class="carousel-indicators">
-    <button *ngFor="let slide of slides; let i = index" type="button"
-    data-bs-target="#carouselExampleCaptions" [attr.data-bs-slide-to]="i"
-    [class.active]="i === currentIndex" aria-current="true" [attr.aria-label]="'Slide ' + (i+1)"
-    (click)="goToSlide(i)"></button>
-  </div>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" #carousel [style.width]="carouselWidth">
   <div class="carousel-inner">
-    <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0">
+    <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0" data-bs-interval="2000">
       <img [src]="slide.image" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h1>{{ slide.title }}</h1>
@@ -14,5 +9,12 @@
       </div>
     </div>
   </div>
-
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
