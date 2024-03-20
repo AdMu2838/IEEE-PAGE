@@ -21,7 +21,6 @@ import {CarouselComponent} from "./shared/carousel/carousel.component";
     NgbModule,
     SharedModule,
     FontAwesomeModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

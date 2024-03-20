@@ -1,0 +1,37 @@
+:host{
+  display: block;
+  margin-bottom: 120px;
+}
+
+.mt-7 {
+  margin-top: 7rem !important; /* Establece el margen superior en 3 rem */
+}
+
+.bg-header{
+  background-color: #FFA300;
+}
+
+.navbar{
+  padding: 20px
+}
+
+.img-fluid{
+  max-height: 50px;
+  padding-left: 50px;
+}
+
+img[alt="logoletters"].img-fluid{
+  margin-botton: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-family: "Arial Black";
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #fcbd4e;
+}

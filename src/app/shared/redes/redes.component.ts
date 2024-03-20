@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./redes.component.scss']
 })
 export class RedesComponent {
-
+  mostrarCorreo: boolean = false;
+  toggleCorreo(){
+    this.mostrarCorreo = true;
+  }
 }
