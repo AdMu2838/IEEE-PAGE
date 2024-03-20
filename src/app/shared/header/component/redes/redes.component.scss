@@ -1,0 +1,20 @@
+
+.bg-container{
+  background-color: blue;
+}
+.nav .nav-link {
+    color: #0b0707;
+    background-color: #fcbd4e;
+    transition: background-color 0.9s, color 0.3s;
+}
+
+.nav .nav-link:hover {
+    background-color: #1daae8;
+}
+.bg-header{
+  background-color: #ff9800;
+}
+
+.navbar{
+  padding: 20px
+}
