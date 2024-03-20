@@ -1,5 +1,5 @@
 
-<div id="{{carouselId}}" class="carousel slide" data-bs-ride="carousel"  [style.width]="carouselWidth" style="margin: 0 auto">
+<div id="{{carouselId}}" class="carousel slide" data-bs-ride="carousel"  [style.width]="carouselWidth" >
   <div class="carousel-inner">
     <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0" data-bs-interval="2000">
       <img [src]="slide.image" class="d-block w-100" alt="...">
