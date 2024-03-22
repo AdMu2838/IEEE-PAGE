@@ -10,6 +10,8 @@ import {SharedModule} from "./shared/shared.module";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {CarouselComponent} from "./shared/carousel/carousel.component";
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
