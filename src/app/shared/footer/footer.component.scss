@@ -34,7 +34,7 @@ h3 {
 
 
 .link {
-    max-width: 200px;
+    max-width: 230px;
 }
 
 .join {
@@ -45,7 +45,7 @@ h3 {
 .list-links li {
     display: inline-block;
     width: 50%;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
   }
 
   .column {
@@ -57,6 +57,7 @@ h3 {
     text-decoration: none;
     color: #000000a1;
     transition: color 0.3s ease;
+    
   }
   
   .list-links li a::before {
@@ -157,6 +158,7 @@ h3 {
 .social-networks {
     margin-right: 5%;
 }
+
   
 .social-icons li a {
     padding: 5px; 
@@ -164,13 +166,14 @@ h3 {
     text-decoration: none; 
     border-bottom: 2px solid transparent; 
     transition: border-bottom-color 0.3s ease; 
+    
   }
   
   .social-icons li a:hover {
     border-bottom-color: #BA0C2F; 
   }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
     .about {
         max-width: 90%;
 
