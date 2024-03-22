@@ -40,8 +40,8 @@
 }
 
 .card:hover .intro{
-  height: 50%;
-  margin-top: 28%;
+  height: 100%;
+  margin-top: 0.1%;
 }
 .card:hover p{
   visibility: visible;
@@ -51,23 +51,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: auto;
 }
 .intro{
-  height: 25%;
+  height: 100%;
   width: 100%;
   margin-top: 75%;
   box-sizing: border-box;
   position: absolute;
   background: rgb(27,27,27,.5);
   color: white;
-  padding: 7px;
+  padding: 20px;
 }
 
 .intro p{
   visibility: hidden;
   opacity: 0;
 }
-.intro h5{
+.intro h3{
   text-align: center;
 
 }
