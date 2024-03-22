@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from "./shared/shared.module";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {CarouselComponent} from "./shared/carousel/carousel.component";
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +21,8 @@ import {SharedModule} from "./shared/shared.module";
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
