@@ -1,31 +1,36 @@
 
 <div class="contenedor">
-  <app-carousel [slides]="carouselSlides"></app-carousel>
+  <div class="carousel-main">
+    <app-carousel [slides]="carouselSlides"></app-carousel>
+  </div>
   <h1>ULTIMOS EVENTOS REALIZADOS</h1>
-  <app-carousel [slides]="carouselSlides2" carouselWidth="65%" carouselId="carouselExampleInterval2"></app-carousel>
-  <button class="evento-button">
+  <div class="carousel-evento">
+    <app-carousel [slides]="carouselSlides2" carouselId="carouselExampleInterval2"></app-carousel>
+  </div>
+
+  <button class="evento-button" routerLink="/eventos">
     Conoce nuestros proximos eventos
   </button>
   <h1>NUESTROS SUBCOMITES</h1>
   <div class="subcomite">
     <div class="card">
-      <img src="assets/images/imagen3.jpg">
+      <img src="assets/images/CIS_logo.webp">
       <div class="intro">
-        <h2>Subcomite 1</h2>
+        <h3>Subcomite 1</h3>
+        <p>Descripcion</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/PES_LOGO.jpeg">
+      <div class="intro">
+        <h3>Subcomite 1</h3>
         <p>Descripcion</p>
       </div>
     </div>
     <div class="card">
       <img src="assets/images/imagen3.jpg">
       <div class="intro">
-        <h2>Subcomite 1</h2>
-        <p>Descripcion</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/images/imagen3.jpg">
-      <div class="intro">
-        <h2>Subcomite 1</h2>
+        <h3>Subcomite 1</h3>
         <p>Descripcion</p>
       </div>
     </div>

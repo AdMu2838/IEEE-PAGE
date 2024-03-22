@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   carouselSlides = [
-    { image: 'assets/images/imagen1.jpeg',
+    { image: 'assets/images/carrusel1.jpg',
       title: 'UNSA IEEE',
       description: 'Nuestro capítulo está formado por una junta directiva ejecutiva dedicada a asegurarse de que te sientas bienvenido. Priorizamos tu participación conectando a estudiantes de primer año con estudiantes de cursos superiores, a estudiantes de pregrado con profesores, y a solicitantes con pasantías potenciales.' },
     { image: 'assets/images/imagen2.png', title: 'UNSA IEEE', description: '¡Involúcrate en todo lo relacionado con el curso 6 y más allá asistiendo a nuestros eventos! Conocerás a estudiantes tan apasionados como tú en el diverso espectro de colores que representa el curso 6, así como a profesores y líderes en el campo.' },
