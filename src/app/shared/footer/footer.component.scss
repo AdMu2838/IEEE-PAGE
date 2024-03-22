@@ -130,23 +130,33 @@ h3 {
   }
 
 .copyright-area {
-    margin-top: 10px;
-    max-width: 85%;
-    margin-left: 5%;
+    margin-top: 10px;   
 }
 
+.copyright-text {
+    margin-left: 5%;
+}
 
 
 .copyright-text a {
     list-style-type: none;
     text-decoration: none;
     color: #000000a1;
+    transition: font-weight 0.3s ease;
+}
+.copyright-text a:hover {
+    font-weight: bold;
 }
 
 .social-icons {
     display: flex;
     justify-content: space-between; 
+    
   }
+
+.social-networks {
+    margin-right: 5%;
+}
   
 .social-icons li a {
     padding: 5px; 
@@ -176,5 +186,9 @@ h3 {
 
     .join {
         max-width: 45%;
+    }
+
+    .social-networks {
+        display: none;
     }
 }
