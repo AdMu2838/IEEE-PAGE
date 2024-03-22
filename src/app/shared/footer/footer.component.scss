@@ -136,11 +136,29 @@ h3 {
 }
 
 
+
 .copyright-text a {
     list-style-type: none;
     text-decoration: none;
-    color: #000000;
+    color: #000000a1;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+.social-icons li a {
+    padding: 5px; 
+    color: #333; 
+    text-decoration: none; 
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.3s ease; 
+  }
+  
+  .social-icons li a:hover {
+    border-bottom-color: #BA0C2F; 
+  }
 
 @media screen and (max-width: 1050px) {
     .about {
