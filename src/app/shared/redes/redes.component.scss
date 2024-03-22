@@ -1,0 +1,14 @@
+:host{
+  display: block;
+  position: absolute;
+  z-index: 999;
+}
+.nav .nav-link {
+    color: #0b0707;
+    background-color: rgba(255, 208, 0, 0.72);
+    transition: background-color 0.9s, color 0.3s;
+}
+
+.nav .nav-link:hover {
+    background-color: rgba(255, 163, 0, 0.76);
+}
