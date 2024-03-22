@@ -1,43 +1,81 @@
 footer {
-    background: #151414;
+    background: #ffa300;
     position: relative;
-    color: #757575;
+    color: #000000a1;
 }
 
 h3 {
-    color: #fff;
+    color: #000000a1;
+    margin-bottom: 40px;
 }
 
 .img-fluid {
     width: 200px;
+    margin-bottom: 10px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .about {
-    max-width: 400px;
+    max-width: 35%;
 }
 
 .link-join {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 55%;
     justify-content: center;
 }
 
 
 .link {
-    max-width: 300px;
+    max-width: 200px;
+}
+
+.join {
+    width: 300px;
+    margin-left: 7%;
 }
 
 .list-links li {
     display: inline-block;
     width: 50%;
     margin-bottom: 12px;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .list-links li a {
+    position: relative;
+    text-decoration: none;
+    color: #000000a1;
+    transition: color 0.3s ease;
+  }
+  
+  .list-links li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #BA0C2F;
+    transition: width 0.3s ease;
+  }
+  
+  .list-links li a:hover {
+    color: #BA0C2F;
+  }
+  
+  .list-links li a:hover::before {
+    width: 100%;
   }
 
 .join {
@@ -56,4 +94,69 @@ h3 {
     margin-right: 20px;
 }
 
+.join-form input[type="text"] {
+    padding: 8px; /* Ajusta el relleno del campo de texto */
+    margin-right: 5px; /* Espacio entre el campo de texto y el botón */
+  }
+  
+  .join-form button {
+    padding: 8px 16px; /* Ajusta el relleno del botón */
+    background-color: #ffffff9c; /* Color de fondo del botón */
+    color: #030000; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  .join-form button:hover {
+    background-color: #BA0C2F; 
+    color: white;
+  }
 
+h3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55%;
+    height: 4px;
+    background-color: #000000;
+    bottom: -10px;
+    margin-left: 0px; 
+  }
+
+.copyright-area {
+    margin-top: 10px;
+    max-width: 85%;
+    margin-left: 5%;
+}
+
+
+.copyright-text a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (max-width: 1050px) {
+    .about {
+        max-width: 90%;
+
+    }
+
+    .link-join {
+        max-width: 1000px;
+    }
+    
+    .link {
+        max-width: 45%;
+    }
+
+    .join {
+        max-width: 45%;
+    }
+}
