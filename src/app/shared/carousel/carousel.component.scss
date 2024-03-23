@@ -1,7 +1,7 @@
 .carousel,
 .carousel-inner,
 .carousel-item {
-  height: 60vh;
+  height: 90vh;
 
 }
 
@@ -20,4 +20,13 @@
 
 .carousel-inner {
   height: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 40vh;
+
+  }
 }
