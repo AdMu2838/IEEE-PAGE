@@ -1,15 +1,16 @@
 footer {
   background-color: rgba(255,163,0, 0.75);
+  color: #664100;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 10px;
 }
   
 .container-footer {
   margin-top: 20px;
-  width: 90%;
+  width: 85%;
 }
 
 .container-above {
@@ -27,17 +28,18 @@ footer {
 /*Titulos*/
 
 h3 {
-  margin-bottom: 20px; 
+  margin-top: 10px;
+  margin-bottom: 25px; 
   position: relative;
   display: inline-block;
 }
 
 h3::before {
   position: absolute;
-  background-color: #000000;
+  background-color: #a36800;
   width: 55%;
   height: 4px;
-  bottom: -10px;
+  bottom: -8px;
   content: "";
 }
 
@@ -45,6 +47,9 @@ p {
   line-height: 1.5;
 }
 
+a {
+  color: #664100;
+}
 
 /*LOGO*/    
 
@@ -54,13 +59,17 @@ p {
 }
 
 .container-description {
-  max-width: 400px;
+  max-width: 350px;
 }
 
 
 
 /*LINKS*/
 
+.container-links {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .container-links ul {
   list-style-type: none;
@@ -69,25 +78,24 @@ p {
 }
 
 .container-links li {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 
 .container-links a {
   text-decoration: none;
-  font-size: 14px; 
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .container-links a:hover {
-  color: #1a072b;
+  color: #a36800;
   text-decoration: underline; 
 }
 
 /*CORREO*/
 
 .container-correo {
-  max-width: 300px;
+  max-width: 290px;
 }
 
 .container-correo input {
@@ -126,12 +134,24 @@ p {
 
 
 /*ESTADO DE CONTENEDORES EN MENOS TAMAÑO*/ 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
+  .container-footer {
+    max-width: 80%;
+  }
+
   .container-description {
       max-width: 100%;
   }
 
-  .container-footer {
-      max-width: 80%;
+  .container-links {
+    margin-left: 0;
+  }
+
+  #logo {
+    max-width: 210px;
+  }
+
+  h3 {
+    margin-top: 0;
   }
 }
