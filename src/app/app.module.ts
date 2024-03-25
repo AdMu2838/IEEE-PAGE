@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from "./shared/shared.module";
-
 import {CarouselComponent} from "./shared/carousel/carousel.component";
 
 
@@ -22,7 +21,6 @@ import {CarouselComponent} from "./shared/carousel/carousel.component";
     BrowserAnimationsModule,
     NgbModule,
     SharedModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
