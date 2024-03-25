@@ -31,10 +31,10 @@
 
             <div class="container-correo">
                 <h3>Más información</h3>
-                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod.</p>
-                <form action="#">
-                    <input type="text" placeholder="Email">
-                    <button><i class="enviar"></i>Enviar</button>
+                <p>Si te gustaría ser parte de la IEEE, por favor ingresa tu nombre</p>
+                <form>
+                    <input #nombreInput type="text" placeholder="Nombre" required>
+                    <button (click)="enviarMensaje(nombreInput.value)">Enviar</button>
                 </form>
 
             </div>
@@ -50,9 +50,15 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!-- Botones con iconos -->
-                            <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="btn btn-success"><i class="bi bi-whatsapp"></i></a>
-                            <a href="#" class="btn btn-info"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=61553552039655" target="_blank">
+                                <i class="bi bi-facebook" ></i>
+                            </a>
+                            <a class="btn btn-success" href="mailto:correo_ieee_cs@unsa.com?subject=Asunto&body=Cuerpo%20del%20mensaje" target="_blank">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            <a class="btn btn-info" href="#" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
