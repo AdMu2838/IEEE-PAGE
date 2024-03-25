@@ -2,7 +2,7 @@
 .contenedor{
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 5%;
 }
 .contenedor h1{
   text-align: center;
@@ -52,6 +52,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   height: auto;
+  width: 88%;
+  margin: 0 auto;
 }
 .intro{
   height: 100%;
@@ -88,7 +90,9 @@
     width: 90%;
     height: 25%;
   }
-
+  .subcomite{
+    width: 100%;
+  }
 }
 
 

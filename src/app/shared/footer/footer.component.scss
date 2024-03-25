@@ -1,5 +1,5 @@
 footer {
-    background: #ffa300;
+    background: rgba(255,163,0, 0.75);
     position: relative;
     color: #000000a1;
 }
@@ -57,9 +57,9 @@ h3 {
     text-decoration: none;
     color: #000000a1;
     transition: color 0.3s ease;
-    
+
   }
-  
+
   .list-links li a::before {
     content: "";
     position: absolute;
@@ -70,11 +70,11 @@ h3 {
     background-color: #BA0C2F;
     transition: width 0.3s ease;
   }
-  
+
   .list-links li a:hover {
     color: #BA0C2F;
   }
-  
+
   .list-links li a:hover::before {
     width: 100%;
   }
@@ -99,7 +99,7 @@ h3 {
     padding: 8px; /* Ajusta el relleno del campo de texto */
     margin-right: 5px; /* Espacio entre el campo de texto y el botón */
   }
-  
+
   .join-form button {
     padding: 8px 16px; /* Ajusta el relleno del botón */
     background-color: #ffffff9c; /* Color de fondo del botón */
@@ -107,9 +107,9 @@ h3 {
     border: none; /* Elimina el borde del botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   }
-  
+
   .join-form button:hover {
-    background-color: #BA0C2F; 
+    background-color: #BA0C2F;
     color: white;
   }
 
@@ -117,7 +117,7 @@ h3 {
     position: relative;
     display: inline-block;
   }
-  
+
   h3::before {
     content: "";
     position: absolute;
@@ -127,11 +127,11 @@ h3 {
     height: 4px;
     background-color: #000000;
     bottom: -10px;
-    margin-left: 0px; 
+    margin-left: 0px;
   }
 
 .copyright-area {
-    margin-top: 10px;   
+    margin-top: 10px;
 }
 
 .copyright-text {
@@ -151,26 +151,26 @@ h3 {
 
 .social-icons {
     display: flex;
-    justify-content: space-between; 
-    
+    justify-content: space-between;
+
   }
 
 .social-networks {
     margin-right: 5%;
 }
 
-  
+
 .social-icons li a {
-    padding: 5px; 
-    color: #333; 
-    text-decoration: none; 
-    border-bottom: 2px solid transparent; 
-    transition: border-bottom-color 0.3s ease; 
-    
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+
   }
-  
+
   .social-icons li a:hover {
-    border-bottom-color: #BA0C2F; 
+    border-bottom-color: #BA0C2F;
   }
 
 @media screen and (max-width: 1080px) {
@@ -182,7 +182,7 @@ h3 {
     .link-join {
         max-width: 1000px;
     }
-    
+
     .link {
         max-width: 45%;
     }
