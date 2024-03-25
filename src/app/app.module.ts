@@ -21,7 +21,6 @@ import {CarouselComponent} from "./shared/carousel/carousel.component";
     BrowserAnimationsModule,
     NgbModule,
     SharedModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

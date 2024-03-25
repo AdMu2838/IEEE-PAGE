@@ -1,197 +1,177 @@
 footer {
-    background: rgba(255,163,0, 0.75);
-    position: relative;
-    color: #000000a1;
+  background-color: rgba(255,163,0, 0.75);
+  color: #664100;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+
 }
+  
+.container-footer {
+  margin-top: 20px;
+  width: 85%;
+}
+
+.container-above {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-below {
+  /*background-color: #996100;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Titulos*/
 
 h3 {
-    color: #000000a1;
-    margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px; 
+  position: relative;
+  display: inline-block;
 }
 
-.img-fluid {
-    width: 200px;
-    margin-bottom: 10px;
+h3::before {
+  position: absolute;
+  background-color: #a36800;
+  width: 55%;
+  height: 4px;
+  bottom: -8px;
+  content: "";
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
+p {
+  line-height: 1.5;
 }
 
-.about {
-    max-width: 35%;
+a {
+  color: #664100;
 }
 
-.link-join {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 55%;
-    justify-content: center;
+/*LOGO*/    
+
+#logo {
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+.container-description {
+  max-width: 365px;
 }
 
 
-.link {
-    max-width: 230px;
+
+/*LINKS*/
+
+.container-links {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.join {
-    width: 300px;
-    margin-left: 7%;
+.container-links ul {
+  list-style-type: none;
+  padding: 0;
+  
 }
 
-.list-links li {
-    display: inline-block;
-    width: 50%;
-    margin-bottom: 18px;
+.container-links li {
+  padding-bottom: 5px;
+}
+
+
+.container-links a {
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.container-links a:hover {
+  color: #a36800;
+  text-decoration: underline; 
+}
+
+/*CORREO*/
+
+.container-correo {
+  max-width: 290px;
+}
+
+.container-correo input {
+  padding: 8px; 
+  margin-right: 7px;
+}
+
+
+.container-correo button {
+  padding: 8px 16px;
+  background-color: #ffffff9c; 
+  color: #030000; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.container-correo button:hover {
+  background-color: #a36800; 
+  color: white;
+}
+
+/*COPYRIGHT*/
+
+.container-copyright {
+  padding-top: 8px;
+}
+
+.container-copyright a {
+  text-decoration: none;
+}
+.container-copyright a:hover {
+  font-weight: bold;
+}
+
+
+/*ICONOS*/
+
+.btn {
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+
+
+/*ESTADO DE CONTENEDORES EN MENOS TAMAÑO*/ 
+@media screen and (max-width: 1050px) {
+  .container-footer {
+    max-width: 80%;
   }
 
-  .column {
-    flex: 1;
+  .container-description {
+      max-width: 100%;
   }
 
-  .list-links li a {
-    position: relative;
-    text-decoration: none;
-    color: #000000a1;
-    transition: color 0.3s ease;
-
+  .container-links {
+    margin-left: 0;
+    margin-right: 100px;
   }
 
-  .list-links li a::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #BA0C2F;
-    transition: width 0.3s ease;
+  #logo {
+    max-width: 210px;
   }
 
-  .list-links li a:hover {
-    color: #BA0C2F;
+  h3 {
+    margin-top: 0;
   }
+}
 
-  .list-links li a:hover::before {
+
+@media screen and (max-width: 750px) {
+  .container-footer {
     width: 100%;
   }
 
-.join {
-    max-width: 400px;
-}
-
-.copyright-area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.social-networks li {
-    display: inline-block;
-    width: 10%;
-    margin-right: 20px;
-}
-
-.join-form input[type="text"] {
-    padding: 8px; /* Ajusta el relleno del campo de texto */
-    margin-right: 5px; /* Espacio entre el campo de texto y el botón */
+  .container-redes {
+    display: none;
   }
-
-  .join-form button {
-    padding: 8px 16px; /* Ajusta el relleno del botón */
-    background-color: #ffffff9c; /* Color de fondo del botón */
-    color: #030000; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  }
-
-  .join-form button:hover {
-    background-color: #BA0C2F;
-    color: white;
-  }
-
-h3 {
-    position: relative;
-    display: inline-block;
-  }
-
-  h3::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 55%;
-    height: 4px;
-    background-color: #000000;
-    bottom: -10px;
-    margin-left: 0px;
-  }
-
-.copyright-area {
-    margin-top: 10px;
-}
-
-.copyright-text {
-    margin-left: 5%;
-}
-
-
-.copyright-text a {
-    list-style-type: none;
-    text-decoration: none;
-    color: #000000a1;
-    transition: font-weight 0.3s ease;
-}
-.copyright-text a:hover {
-    font-weight: bold;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-.social-networks {
-    margin-right: 5%;
-}
-
-
-.social-icons li a {
-    padding: 5px;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom-color 0.3s ease;
-
-  }
-
-  .social-icons li a:hover {
-    border-bottom-color: #BA0C2F;
-  }
-
-@media screen and (max-width: 1080px) {
-    .about {
-        max-width: 90%;
-
-    }
-
-    .link-join {
-        max-width: 1000px;
-    }
-
-    .link {
-        max-width: 45%;
-    }
-
-    .join {
-        max-width: 45%;
-    }
-
-    .social-networks {
-        display: none;
-    }
 }
