@@ -1,7 +1,9 @@
 
-<div id="{{carouselId}}" class="carousel slide" data-bs-ride="carousel"  [style.width]="carouselWidth" >
-  <div class="carousel-inner">
-    <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0" data-bs-interval="2000">
+<div id="{{carouselId}}" class="carousel slide" data-bs-ride="carousel"
+     [style.width]="carouselWidth" [style.height]="carouselHeight" >
+  <div class="carousel-inner" [style.height]="carouselHeight">
+    <div *ngFor="let slide of slides; let i = index" class="carousel-item"
+         [class.active]="i === 0" data-bs-interval="2000" [style.height]="carouselHeight">
       <img [src]="slide.image" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h1>{{ slide.title }}</h1>

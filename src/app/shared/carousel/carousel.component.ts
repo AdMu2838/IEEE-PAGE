@@ -11,7 +11,7 @@ export class CarouselComponent implements OnInit{
   @Input() slides: { image: string, title?: string, description?: string }[] = [];
   @Input() carouselWidth: string = '100%';
   @Input() carouselId: string = 'carouselExampleInterval';
-
+  @Input() carouselHeight: string = '40vw';
 
   constructor() { }
 
