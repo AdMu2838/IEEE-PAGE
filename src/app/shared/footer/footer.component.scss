@@ -6,6 +6,7 @@ footer {
   margin: 0;
   padding: 0;
   padding-top: 10px;
+
 }
   
 .container-footer {
@@ -78,7 +79,7 @@ a {
 }
 
 .container-links li {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 
@@ -100,7 +101,7 @@ a {
 
 .container-correo input {
   padding: 8px; 
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 
@@ -119,6 +120,10 @@ a {
 
 /*COPYRIGHT*/
 
+.container-copyright {
+  padding-top: 8px;
+}
+
 .container-copyright a {
   text-decoration: none;
 }
@@ -129,7 +134,10 @@ a {
 
 /*ICONOS*/
 
-
+.btn {
+  border-radius: 50%;
+  margin-left: 8px;
+}
 
 
 
@@ -145,6 +153,7 @@ a {
 
   .container-links {
     margin-left: 0;
+    margin-right: 100px;
   }
 
   #logo {
@@ -153,5 +162,16 @@ a {
 
   h3 {
     margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .container-footer {
+    width: 100%;
+  }
+
+  .container-redes {
+    display: none;
   }
 }
