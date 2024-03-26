@@ -11,6 +11,7 @@ import {HeaderComponent} from "../shared/header/header.component";
   declarations: [
     HomeComponent,
     HeaderComponent
+
   ],
   imports: [
     CommonModule,
