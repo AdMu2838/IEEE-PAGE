@@ -1,11 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./page/home.component";
+import {HeaderComponent} from "../shared/header/header.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    children: [
+      {
+        path: '',component: HomeComponent,
+      },
+      {
+        path: 'header',component: HeaderComponent,
+      },
+      {
+        path: 'footer',component: HeaderComponent,
+      }
+    ]
   },
 ];
 
