@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {FooterComponent} from "./shared/footer/footer.component";
 
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+
   {
-    path: 'home',
+    path: '',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'equipo',
     loadChildren: () => import('./team/team.module').then(m => m.TeamModule)
+  },
+  {
+    path: '**',
+    component: FooterComponent,
   },
 ];
 
