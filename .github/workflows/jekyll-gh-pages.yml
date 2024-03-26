@@ -23,7 +23,6 @@ jobs:
 
       - name: Build Angular app
         run: npm run build:prod
-
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
