@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {FooterComponent} from "./shared/footer/footer.component";
+import {HeaderComponent} from "./shared/header/header.component";
 
 
 
@@ -23,8 +24,16 @@ const routes: Routes = [
     loadChildren: () => import('./team/team.module').then(m => m.TeamModule)
   },
   {
-    path: '**',
-    component: FooterComponent,
+    path: '',
+    component: HeaderComponent, // Carga HeaderComponent en todas las rutas
+    outlet: 'header', // Nombre del outlet donde se cargará el header
+    pathMatch: 'full', // Asegura que el header se cargue solo en la ruta raíz
+  },
+  {
+    path: '',
+    component: FooterComponent, // Carga FooterComponent en todas las rutas
+    outlet: 'footer', // Nombre del outlet donde se cargará el footer
+    pathMatch: 'full', // Asegura que el footer se cargue solo en la ruta raíz
   },
 ];
 
