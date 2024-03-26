@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import {HomeComponent} from "./page/home.component";
 import {SharedModule} from "../shared/shared.module";
 import {HeaderComponent} from "../shared/header/header.component";
+import {FooterComponent} from "../shared/footer/footer.component";
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {HeaderComponent} from "../shared/header/header.component";
     HomeRoutingModule,
     SharedModule
 
-  ]
+  ],
+  exports: [HeaderComponent, FooterComponent]
 })
 export class HomeModule { }
