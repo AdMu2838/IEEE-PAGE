@@ -4,7 +4,7 @@
   <div class="carousel-inner" [style.height]="carouselHeight">
     <div *ngFor="let slide of slides; let i = index" class="carousel-item"
          [class.active]="i === 0" data-bs-interval="2000" [style.height]="carouselHeight">
-      <img [src]="slide.image" class="d-block w-100" alt="...">
+      <img [src]="slide.image" class="d-block w-100" alt="..." [ngStyle]="{'filter': 'brightness(' + brillo + ')'}">
       <div class="carousel-caption d-none d-md-block">
         <h1>{{ slide.title }}</h1>
         <h5>{{ slide.description }}</h5>
