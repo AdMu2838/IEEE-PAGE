@@ -12,6 +12,7 @@ export class CarouselComponent implements OnInit{
   @Input() carouselWidth: string = '100%';
   @Input() carouselId: string = 'carouselExampleInterval';
   @Input() carouselHeight: string = '40vw';
+  @Input() brillo: string='100%';
 
   constructor() { }
 
