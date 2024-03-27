@@ -18,7 +18,7 @@
     //position: fixed;
 }
 .text-overlay {
-  background-color: #fcbd4e;
+  //background-color: #fcbd4e;
   position: absolute;
   top: 128px;
   left: 0;
@@ -28,7 +28,7 @@
   font-size: 15px;
 }
 
-.image-container:hover .text-overlay {
+.image-container:hover + .text-overlay {
   visibility: visible;
 }
 
