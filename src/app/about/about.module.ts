@@ -10,10 +10,14 @@ import {SharedModule} from "../shared/shared.module";
   declarations: [
     AboutComponent
   ],
+  exports: [
+    AboutComponent
+  ],
   imports: [
     CommonModule,
     AboutRoutingModule,
     SharedModule
-  ]
+  ],
+
 })
 export class AboutModule { }
