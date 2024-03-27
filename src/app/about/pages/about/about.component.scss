@@ -1,12 +1,51 @@
 
 
-
+/* SECCION DE QUIENES SOMOS */
 
 .container-about {
-    background-image: url('/assets/about-unsa.jpg');
+    background-image: linear-gradient(rgba(255, 140, 0, 0.5), rgba(255, 140, 0, 0.5)), url('/assets/images/about-unsa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    padding-top: 250px;
+  }
+  
+  .container-about h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .container-about p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  
 
-    background-color: rgba(0, 0, 0, 0.5); /* Cambia el último valor (0.5) para ajustar la opacidad del fondo oscuro */
-    color: white; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    padding: 20px; /* Espacio interior */
+.container-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-vision-mision {
+    width: 80%;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-img img {
+    width: 100%;
+    border-radius: 10px;
 }
