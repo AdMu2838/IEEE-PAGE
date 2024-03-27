@@ -12,13 +12,14 @@ import {RedesComponent} from "./redes/redes.component";
         HeaderComponent,
         FooterComponent,
         CarouselComponent,
-        RedesComponent
+        RedesComponent,
     ],
-    exports: [
-        HeaderComponent,
-        FooterComponent,
-        CarouselComponent
-    ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    CarouselComponent,
+    RedesComponent,
+  ],
     imports: [
         CommonModule,
         RouterModule

@@ -1,4 +1,4 @@
-import { Component,HostListener } from '@angular/core';
+import { Component,HostListener,Input } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -6,6 +6,8 @@ import { Component,HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   scrolled= true;
+  @Input() fixedTop: boolean = false;
+
   @HostListener('window:scroll', [])
   onWindowScroll(){
     this.scrolled = window.scrollY === 0;

@@ -7,13 +7,16 @@ import { EventsComponent } from './pages/events/events.component';
 
 
 @NgModule({
-  declarations: [
-    EventsComponent
-  ],
-  imports: [
-    CommonModule,
-    EventsRoutingModule,
-    SharedModule
-  ]
+    declarations: [
+        EventsComponent
+    ],
+    exports: [
+        EventsComponent
+    ],
+    imports: [
+        CommonModule,
+        EventsRoutingModule,
+        SharedModule
+    ]
 })
 export class EventsModule { }
