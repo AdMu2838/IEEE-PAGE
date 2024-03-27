@@ -3,26 +3,26 @@
 /* SECCION DE QUIENES SOMOS */
 
 .container-about {
-    background-image: linear-gradient(rgba(255, 140, 0, 0.5), rgba(255, 140, 0, 0.5)), url('/assets/images/about-unsa.jpg');
+    background-image: linear-gradient(rgba(255, 140, 0, 0.5), rgba(255, 140, 0, 0.5)), url('assets/images/about-unsa.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px;
     color: white;
     padding-top: 250px;
   }
-  
+
   .container-about h3 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  
+
   .container-about p {
     font-size: 20px;
     font-weight: bold;
     line-height: 1.6;
   }
-  
+
 
 .container-section {
     width: 100%;
