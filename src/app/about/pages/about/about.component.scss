@@ -1,51 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 
 
-/* SECCION DE QUIENES SOMOS */
+/* PORTADA */
 
-.container-about {
-    background-image: linear-gradient(rgba(255, 140, 0, 0.5), rgba(255, 140, 0, 0.5)), url('/assets/images/about-unsa.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    color: white;
-    padding-top: 250px;
+.container-portada {
+  width: 100%;
+  height: 750px;
+  position: relative;
+  background-size: cover;
+  animation: movimiento 5s infinite linear alternate;  
+}
+
+
+@keyframes movimiento{
+  from{
+      background-position: bottom left;
+  }to{
+      background-position: top right;
+  }
+}
+
+.capa-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(255,163,0,0.5));
+}
+
+.container-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.details {
+  max-width: 92%; 
+  padding: 20px;
+  color: white;
+  padding-bottom: 5vw;
+}
+ 
+
+
+.details h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.details p{
+  padding-left: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .container-portada {
+    animation: movimiento 12s infinite linear alternate;  
   }
 
-  .container-about h3 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  .container-details {
+    align-items: center;
   }
 
-  .container-about p {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.6;
+  .details {
+    padding: 0;
+    max-height: 750px;
+    overflow: auto;
   }
 
+  .details h1 {
+    font-size: 35px;
+  }
+
+  .details p {
+    font-size: 22px;
+  }
+}
+
+
+/* MISION Y VISION */
 
 .container-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 .container-vision-mision {
-    width: 80%;
-    gap: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f9f9f9;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin-top: 3%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,163,0, 0.3);
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.vision {
+  margin-bottom: 3%;
+}
+
+.container-text {
+  width: 40%;
+}
+
+.container-text h3 {
+  font-weight: bold;
+  margin-bottom: 1vw;
+  font-size: 40px;
+  color: #764b00;
+}
+
+.container-text p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #9d6400;
+}
+
+.container-img {
+  width: 40%;
+}
+
+.container-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  padding: 12%;
+}
+
+.container-img:hover img {
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 800px) {
+
+  .container-vision-mision {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .vision {
+    flex-direction: column-reverse;
+  }
+
+  .container-text {
+    width: 90%;
+  }
+
+  .container-img {
+    width: 65%;
+  }
+
+  .container-comunity {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 1440px) {
+  .container-vision-mision {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .vision {
+    flex-direction: column-reverse;
+  }
+
+  .container-text {
+    width: 90%;
+  }
+
+  .container-img {
+    width: 65%;
+  }
+
+  .container-comunity {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+.container-comunity {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+}
+
+.text-comunity {
+  width: 90%;
+}
+
+.text-comunity h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #764b00;
+  margin-bottom: 0.5vw;
+}
+.text-comunity p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #9d6400;
+  margin-bottom: 2vw;
 }
 
 
-.container-img img {
-    width: 100%;
-    border-radius: 10px;
+.img-comunity {
+  width: 80%;
+  margin-left: 5px;
+}
+
+.img-comunity img {
+  width: 100%;
+  height: auto;
+}
+
+.container-section h3 {
+  position: relative;
+  display: inline-block;
+}
+
+.container-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Ajusta la posición del subrayado */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Grosor del subrayado */
+  background-color: #ffa300; /* Color del subrayado */
+  transition: width 0.75s ease; /* Efecto de transición */
+}
+
+.container-section h3:hover::after {
+  width: 50%; /* Ancho del subrayado al pasar el mouse */
 }
