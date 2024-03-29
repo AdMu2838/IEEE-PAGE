@@ -42,6 +42,7 @@
 .details{
   width: 90%;
   color: white;
+  padding-bottom: 2%;;
 }
 
 .details h1{
@@ -129,7 +130,38 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .container-details {
+    height: auto;
+    padding-top: 30%;
+  }
+  .container-vision-mision {
+    flex-direction: column;
+    padding: 5%;
+  }
 
+  .vision {
+    flex-direction: column-reverse;
+  }
+
+  .container-text {
+    width: 90%;
+  }
+
+  .container-img {
+    width: 65%;
+  }
+
+  .container-comunity {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 1440px) {
+  .container-details {
+    height: auto;
+    padding-top: 25%;
+  }
   .container-vision-mision {
     flex-direction: column;
     padding: 5%;
