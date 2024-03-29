@@ -51,6 +51,17 @@
   position: relative;
 }
 
+@media screen and (max-width: 770px) {
+  #directiva{
+    padding-top: 25%;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 771px) {
+  #directiva{
+    padding-top: 15%;
+  }
+}
+
 
 
 
