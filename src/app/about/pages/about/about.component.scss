@@ -6,13 +6,14 @@
 
 /* PORTADA */
 
-.container-portada{
+.container-portada {
   width: 100%;
-  height: 600px;
+  height: 750px;
   position: relative;
-  background-size: 150%;
-  animation: movimiento 10s infinite linear alternate;
+  background-size: cover;
+  animation: movimiento 5s infinite linear alternate;  
 }
+
 
 @keyframes movimiento{
   from{
@@ -22,55 +23,68 @@
   }
 }
 
-.capa-gradient{
+.capa-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
-  background: -webkit-linear-gradient(top, black, #ffa300);
-  opacity: 0.8;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(255,163,0,0.5));
 }
 
-.container-details{
-  width: 100%;
+.container-details {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 85vh;
+  height: 100%;
 }
 
-
-.details{
-  width: 90%;
+.details {
+  max-width: 92%; 
+  padding: 20px;
   color: white;
-  padding-bottom: 2%;;
+  padding-bottom: 5vw;
 }
+
 
 .details h1{
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
 }
 
 .details p{
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
+  font-weight: bold;
   margin-top: 20px;
 }
 
-@media screen and (max-width: 750px) {
+
+@media only screen and (max-width: 750px) {
+  .container-portada {
+    animation: movimiento 12s infinite linear alternate;  
+  }
+
   .container-details {
-    height: auto;
-    padding-top: 5%;
+    align-items: center;
+  }
+
+  .details {
+    padding: 0;
+    max-height: 750px;
+    overflow: auto;
   }
 
   .details h1 {
-    font-size: 22px;
+    font-size: 35px;
   }
 
   .details p {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
+
 
 /* MISION Y VISION */
 
@@ -84,11 +98,11 @@
 
   justify-content: space-evenly;
   align-items: center;
-  width: 85%;
+  width: 80%;
   margin-top: 3%;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255,163,0, 0.3);
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 2%;
 }
 
@@ -102,13 +116,13 @@
 
 .container-text h3 {
   font-weight: bold;
-  margin-bottom: 0.5vw;
-  font-size: 35px;
+  margin-bottom: 1vw;
+  font-size: 40px;
   color: #764b00;
 }
 
 .container-text p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin-top: 20px;
   color: #9d6400;
@@ -130,10 +144,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .container-details {
-    height: auto;
-    padding-top: 30%;
-  }
+
   .container-vision-mision {
     flex-direction: column;
     padding: 5%;
@@ -158,10 +169,6 @@
 
 }
 @media only screen and (max-width: 1440px) {
-  .container-details {
-    height: auto;
-    padding-top: 25%;
-  }
   .container-vision-mision {
     flex-direction: column;
     padding: 5%;
@@ -201,13 +208,13 @@
 }
 
 .text-comunity h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   color: #764b00;
   margin-bottom: 0.5vw;
 }
 .text-comunity p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
   color: #9d6400;
@@ -216,7 +223,8 @@
 
 
 .img-comunity {
-  width: 50%;
+  width: 80%;
+  margin-left: 5px;
 }
 
 .img-comunity img {
@@ -237,7 +245,7 @@
   width: 100%;
   height: 4px; /* Grosor del subrayado */
   background-color: #ffa300; /* Color del subrayado */
-  transition: width 0.3s ease; /* Efecto de transición */
+  transition: width 0.75s ease; /* Efecto de transición */
 }
 
 .container-section h3:hover::after {
