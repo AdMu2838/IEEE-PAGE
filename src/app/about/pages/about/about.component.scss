@@ -11,7 +11,7 @@
   height: 750px;
   position: relative;
   background-size: cover;
-  animation: movimiento 5s infinite linear alternate;  
+  animation: movimiento 5s infinite linear alternate;
 }
 
 
@@ -40,12 +40,12 @@
 }
 
 .details {
-  max-width: 92%; 
+  max-width: 92%;
   padding: 20px;
   color: white;
   padding-bottom: 5vw;
 }
- 
+
 
 
 .details h1{
@@ -64,11 +64,11 @@
 
 @media only screen and (max-width: 750px) {
   .container-portada {
-    animation: movimiento 12s infinite linear alternate;  
+    animation: movimiento 12s infinite linear alternate;
   }
 
   .container-details {
-    align-items: center;
+    align-items: flex-end;
   }
 
   .details {
