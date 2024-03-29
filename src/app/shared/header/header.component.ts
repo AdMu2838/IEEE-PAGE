@@ -1,4 +1,5 @@
 import { Component,HostListener,Input,ViewChild } from '@angular/core';
+import {fakeAsync} from "@angular/core/testing";
 
 @Component({
   selector: 'app-header',
@@ -6,20 +7,26 @@ import { Component,HostListener,Input,ViewChild } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Input() headerMovil: boolean = true;
   scrolled = true;
-  @Input() headerMovil: boolean = false;
   fixedTop: boolean = true;
+  @ViewChild('miRedesComponent') miRedesComponent: any;
+  redesVisible: boolean = true;
+
+  ngOnInit() {
+    this.comportamiento();
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (this.headerMovil) {
       this.scrolled = window.scrollY === 0;
-    }
-    else {
-      this.fixedTop = false;
-    }
   }
 
-  // Esta variable controla si el encabezado se mantiene en la parte superior de la página
-
+  comportamiento() {
+    if (this.headerMovil === false) {
+      this.fixedTop= false;
+      this.redesVisible = false;
+      this.onWindowScroll();
+    }
+  }
 }
