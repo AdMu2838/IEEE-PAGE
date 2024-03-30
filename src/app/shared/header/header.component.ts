@@ -1,4 +1,4 @@
-import { Component,HostListener,Input,ViewChild } from '@angular/core';
+import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import {fakeAsync} from "@angular/core/testing";
 
 @Component({
@@ -6,7 +6,7 @@ import {fakeAsync} from "@angular/core/testing";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
   @Input() headerMovil: boolean = true;
   // @ts-ignore
   scrolled : boolean;
@@ -14,10 +14,13 @@ export class HeaderComponent {
   @ViewChild('miRedesComponent') miRedesComponent: any;
   redesVisible: boolean = true;
   private scrollListener: any;
+
+  constructor() {
+  }
   ngOnInit() {
     this.comportamiento();
-  }
 
+  }
 
 
   comportamiento() {
