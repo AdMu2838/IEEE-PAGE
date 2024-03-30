@@ -1,7 +1,7 @@
-#directiva{
+#directiva {
 
-  padding-top: 15%;
-
+  padding-top: 1%;
+}
 .card {
   max-width: 300px;
   margin: 0 auto;
@@ -55,14 +55,5 @@
 }
 
 
-@media screen and (max-width: 770px) {
-  #directiva{
-    padding-top: 25%;
-  }
-}
-@media screen and (max-width: 1440px) and (min-width: 771px) {
-  #directiva{
-    padding-top: 15%;
-  }
-}
+
 
