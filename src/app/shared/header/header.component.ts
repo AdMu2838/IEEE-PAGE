@@ -8,7 +8,8 @@ import {fakeAsync} from "@angular/core/testing";
 })
 export class HeaderComponent {
   @Input() headerMovil: boolean = true;
-  scrolled = true;
+  // @ts-ignore
+  scrolled : boolean;
   fixedTop: boolean = true;
   @ViewChild('miRedesComponent') miRedesComponent: any;
   redesVisible: boolean = true;
@@ -23,10 +24,16 @@ export class HeaderComponent {
   }
 
   comportamiento() {
-    if (this.headerMovil === false) {
-      this.fixedTop= false;
+    // Detectar si el usuario está accediendo desde un dispositivo móvil
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+
+    if (this.headerMovil === false || isMobile) {
+      this.fixedTop = false;
       this.redesVisible = false;
-      this.onWindowScroll();
+      this.scrolled = false;
+    } else {
+      this.scrolled = true;
     }
   }
 }
