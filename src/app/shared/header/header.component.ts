@@ -13,15 +13,12 @@ export class HeaderComponent {
   fixedTop: boolean = true;
   @ViewChild('miRedesComponent') miRedesComponent: any;
   redesVisible: boolean = true;
-
+  private scrollListener: any;
   ngOnInit() {
     this.comportamiento();
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-      this.scrolled = window.scrollY === 0;
-  }
+
 
   comportamiento() {
     // Detectar si el usuario está accediendo desde un dispositivo móvil
@@ -32,8 +29,25 @@ export class HeaderComponent {
       this.fixedTop = false;
       this.redesVisible = false;
       this.scrolled = false;
+      this.disableScrollListener()
     } else {
       this.scrolled = true;
+      this.enableScrollListener()
     }
+  }
+  //@HostListener('window:scroll', [])
+  enableScrollListener() {
+    this.scrollListener = this.onWindowScroll.bind(this);
+    window.addEventListener('scroll', this.scrollListener);
+  }
+
+  disableScrollListener() {
+    if (this.scrollListener) {
+      window.removeEventListener('scroll', this.scrollListener);
+    }
+  }
+
+  onWindowScroll() {
+    this.scrolled = window.scrollY === 0;
   }
 }
