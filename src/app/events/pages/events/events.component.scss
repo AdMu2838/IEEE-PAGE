@@ -1,5 +1,5 @@
 .contenedor{
-  padding-top: 15%;
+
   width: 100%;
   margin: 0 auto;
 }
@@ -17,12 +17,11 @@
 .calendar{
   width: 80%;
   margin: 0 auto;
+
 }
 
 @media screen and (max-width: 760px) {
-  .contenedor{
-    padding-top: 40%;
-  }
+
   .carousel{
     width: 80%;
 
@@ -30,6 +29,10 @@
   .contenedor p{
     font-size: 20px;
   }
+  .calendar{
+    width: 98%;
+  }
+
 }
 
 
