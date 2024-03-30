@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import {RouterModule} from "@angular/router";
 import { CarouselComponent } from './carousel/carousel.component';
 import {RedesComponent} from "./redes/redes.component";
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -13,12 +14,14 @@ import {RedesComponent} from "./redes/redes.component";
         FooterComponent,
         CarouselComponent,
         RedesComponent,
+        CardComponent,
     ],
   exports: [
     HeaderComponent,
     FooterComponent,
     CarouselComponent,
     RedesComponent,
+    CardComponent,
   ],
     imports: [
         CommonModule,
