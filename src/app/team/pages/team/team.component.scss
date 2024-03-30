@@ -1,6 +1,7 @@
 #directiva{
+
   padding-top: 15%;
-}
+
 .card {
   max-width: 300px;
   margin: 0 auto;
@@ -11,6 +12,7 @@
   position: relative;
   overflow: hidden;
 }
+
 
 .text-overlay {
   position: absolute;
@@ -47,9 +49,11 @@
   padding: 20px;
 }
 
+
 .image-container {
   position: relative;
 }
+
 
 @media screen and (max-width: 770px) {
   #directiva{
@@ -61,3 +65,4 @@
     padding-top: 15%;
   }
 }
+

@@ -1,5 +1,6 @@
 
 .contenedor{
+
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
@@ -80,11 +81,12 @@
 }
 
 @media screen and (max-width: 1440px) {
+
   .card {
     width: 75%;
   }
   .evento-button{
-    width: 50%;
+    width: 90%;
     font-size: 35px;
   }
   .carousel-evento{
@@ -96,4 +98,14 @@
   }
 }
 
+@media screen and (max-width: 770px) {
+  .contenedor{
+    padding-top: 32%;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 771px) {
+  .contenedor{
+    padding-top: 25%;
+  }
+}
 
