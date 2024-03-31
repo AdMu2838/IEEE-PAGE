@@ -92,9 +92,11 @@
   display: flex;
   justify-content: center;
   transition: transform 0.5s ease;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 .container-section:hover {
-  transform: scale(1.10);
+  transform: scale(1.08);
 }
 .container-vision-mision {
   display: flex;
