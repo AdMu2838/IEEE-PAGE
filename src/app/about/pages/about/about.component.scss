@@ -48,13 +48,13 @@
 
 
 .details h1{
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .details p{
   padding-left: 10px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   font-weight: bold;
   margin-top: 20px;
@@ -91,8 +91,13 @@
 .container-section {
   display: flex;
   justify-content: center;
+  transition: transform 0.5s ease;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
-
+.container-section:hover {
+  transform: scale(1.08);
+}
 .container-vision-mision {
   display: flex;
 

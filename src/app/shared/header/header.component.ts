@@ -49,7 +49,9 @@ export class HeaderComponent implements OnInit{
       window.removeEventListener('scroll', this.scrollListener);
     }
   }
-
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   onWindowScroll() {
     this.scrolled = window.scrollY === 0;
   }
