@@ -58,6 +58,14 @@
     padding-top: 40px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  card-team {
+    background-color: #121212;
+    color: #fff;
+  }
+
+}
+
 
 
 
