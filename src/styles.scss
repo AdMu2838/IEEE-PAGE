@@ -42,3 +42,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import 'bootstrap/scss/bootstrap';
 
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+/*modo oscuro con @media*/
+@media (prefers-color-scheme: dark) {
+  .contenedor, html, body{
+    background-color: #121212;
+    color: #fff;
+  }
+
+
+}
