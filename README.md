@@ -10,7 +10,7 @@
 ## Header y redes
 - En redes esta disponible el acceso a las paginas de facebook, linkedin y correo de la IEEE
 - En header se encuentran los logos y los 4 apartados: inicio, quienes somos, eventos, Equipo
-<img src="https://drive.google.com/uc?id=1wS6w3EQlhX-xV1ZaXNMAs5Kb1br08gEc" alt="JuveR" width="300px">
+<img src="https://drive.google.com/uc?id=1wS6w3EQlhX-xV1ZaXNMAs5Kb1br08gEc" alt="Header" width="1000px">
 
 ## Footer
 - Logo IEEE
