@@ -6,42 +6,42 @@
 
 # Node
 - Version 18
-## Componentes Generales
-# Header y redes
+# Componentes Generales
+## Header y redes
 - En redes esta disponible el acceso a las paginas de facebook, linkedin y correo de la IEEE
 - En header se encuentran los logos y los 4 apartados: inicio, quienes somos, eventos, Equipo
 <img src="https://drive.google.com/file/d/1wS6w3EQlhX-xV1ZaXNMAs5Kb1br08gEc/view?usp=sharing" alt="JuveR" width="300px">
 
-# Footer
+## Footer
 - Logo IEEE
 - Enlace a los apartados del sitio web
 - Mas informacion digiendose al whatsapp de una persona encargada del capitulo estudiantil (Valentina)
 - Acceso a redes
 
-# Carrusel de imagenes
+## Carrusel de imagenes
 - Carrusel reutlizable para realizar distintos carruseles en distintos apartados del sitio web
 
-## Vistas
-# Vista Inicio
+# Vistas
+## Vista Inicio
 - Primer carrusel donde se presentara imagenes generales
 - Segundo carrusel ultimos eventos realizados
 - Subcomites
 
-# Quienes Somos
+## Quienes Somos
 - Descripcion de la IEEE
 - Mision y Vision
 - Informacion general
 
-# Eventos
+## Eventos
 - Carrusel con las portadas de los eventos
 - Calendario conectado al iframe de una cuenta de gmail (se esta usando una cuenta de prueba, agregar la de ustedes)
 
-# Equipo
+## Equipo
 - Contiene a la directiva y comites de Trabajo
 - Cuenta con Hover para leer mas informacion
 
-## Funciones adicionales
-# Modo Oscuro
+# Funciones adicionales
+## Modo Oscuro
 - Ajustable segun la configuracion del navegador (modo oscuro o modo claro)
 
 # ProyectoIeeePage
