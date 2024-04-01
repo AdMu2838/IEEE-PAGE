@@ -13,17 +13,21 @@ https://drive.google.com/drive/u/2/folders/1mCHvagcirwT-sok97jaAeg2u-GFtLWTG
 ## Header y redes
 - En redes esta disponible el acceso a las paginas de facebook, linkedin y correo de la IEEE
 - En header se encuentran los logos y los 4 apartados: inicio, quienes somos, eventos, Equipo
+
 <img src="https://drive.google.com/uc?id=1wS6w3EQlhX-xV1ZaXNMAs5Kb1br08gEc" alt="Header" width="1000px">
 
+
 ## Footer
+
 - Logo IEEE
 - Enlace a los apartados del sitio web
 - Mas informacion digiendose al whatsapp de una persona encargada del capitulo estudiantil (Valentina)
 - Acceso a redes
-- 
+  
 <img src="https://drive.google.com/uc?id=16fkjjhSwBmS1VWX5195Te0aYS49uPgGI" alt="Header" width="1000px">
 
 ## Carrusel de imagenes
+
 - Carrusel reutlizable para realizar distintos carruseles en distintos apartados del sitio web
  <img src="https://drive.google.com/uc?id=1ka-CUXKrkJs74jYyIb7G_qv9MPo3Cqob" alt="Header" width="1000px">
 
