@@ -11,13 +11,14 @@
 - En redes esta disponible el acceso a las paginas de facebook, linkedin y correo de la IEEE
 - En header se encuentran los logos y los 4 apartados: inicio, quienes somos, eventos, Equipo
 <img src="https://drive.google.com/file/d/1wS6w3EQlhX-xV1ZaXNMAs5Kb1br08gEc/view?usp=sharing" alt="JuveR" width="300px">
+
 # Footer
 - Logo IEEE
 - Enlace a los apartados del sitio web
 - Mas informacion digiendose al whatsapp de una persona encargada del capitulo estudiantil (Valentina)
 - Acceso a redes
 
-#Carrusel de imagenes
+# Carrusel de imagenes
 - Carrusel reutlizable para realizar distintos carruseles en distintos apartados del sitio web
 
 ## Vistas
