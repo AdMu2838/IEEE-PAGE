@@ -8,9 +8,12 @@
 - Version 18
 ## Componentes Generales
 # Header
+<div>
+  <iframe src="https://onedrive.live.com/embed?resid=B1499BC484FB7CB6%21468&authkey=!ACneu7y3SGTmKEI" width="98" height="120" frameborder="0" scrolling="no"></iframe>
+</div>
 
 # Vista Inicio
-<iframe src="https://onedrive.live.com/embed?resid=B1499BC484FB7CB6%21468&authkey=!ACneu7y3SGTmKEI" width="98" height="120" frameborder="0" scrolling="no"></iframe>
+https://onedrive.live.com/embed?resid=B1499BC484FB7CB6%21468&authkey=!ACneu7y3SGTmKEI
 
 # ProyectoIeeePage
 
