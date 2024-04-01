@@ -15,16 +15,16 @@
 
                 <ul>
                     <li>
-                        <a (click)="scrollToTop()" routerLink="/">Inicio</a>
+                        <a (click)="scrollToTop()" routerLink="/" routerLinkActive="active">Inicio</a>
                     </li>
                     <li>
-                        <a (click)="scrollToTop()" routerLink="/nosotros">¿Quiénes somos?</a>
+                        <a (click)="scrollToTop()" routerLink="/nosotros" routerLinkActive="active">¿Quiénes somos?</a>
                     </li>
                     <li>
-                        <a (click)="scrollToTop()" routerLink="/eventos">Eventos</a>
+                        <a (click)="scrollToTop()" routerLink="/eventos" routerLinkActive="active">Eventos</a>
                     </li>
                     <li>
-                        <a (click)="scrollToTop()" routerLink="/equipo">Equipo</a>
+                        <a (click)="scrollToTop()" routerLink="/equipo" routerLinkActive="active">Equipo</a>
                     </li>
                 </ul>
             </div>
@@ -34,7 +34,8 @@
                 <p>Si te gustaría ser parte de la IEEE, por favor ingresa tu nombre</p>
                 <form>
                     <input #nombreInput type="text" placeholder="Nombre" required>
-                    <button (click)="enviarMensaje(nombreInput.value)">Enviar</button>
+                    <button (click)="enviarMensaje(nombreInput.value)"
+                            routerLink="/" routerLinkActive="active">Enviar</button>
                 </form>
 
             </div>
