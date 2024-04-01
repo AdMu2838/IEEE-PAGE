@@ -14,7 +14,7 @@ export class FooterComponent {
       const mensaje = `¡Hola!, mi nombre es ${nombre}.\n Quisiera ser parte de la IEEE Computer Society`;
       const mensajeEncoded = encodeURIComponent(mensaje);
       const url = `https://wa.me/${numeroWhatsapp}?text=${mensajeEncoded}`;
-      window.open(url, '_blank');
+      window.open(url);
     }
   }
   scrollToTop() {
