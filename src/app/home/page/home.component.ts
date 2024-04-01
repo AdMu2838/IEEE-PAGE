@@ -17,10 +17,10 @@ export class HomeComponent {
   ];
 
   carouselSlides2 = [
-    { image: 'assets/images/imagen1.jpeg',
+    { image: 'assets/images/eventos_realizados/evento-flutter.jpeg',
 
-      description: 'Evento numero 1' },
-    { image: 'assets/images/imagen2.png', description: 'Evento numero 2' },
-    { image: 'assets/images/imagen3.jpg', description: 'Description for Slide 3' },
+      description: 'Evento Introduccion a Flutter' },
+    { image: 'assets/images/eventos_realizados/evento-android.jpeg', description: 'Ponencia Desarrollo en android' },
+    { image: 'assets/images/eventos_realizados/evento-ibm.jpeg', description: 'Evento IBM Cloud' },
   ];
 }
