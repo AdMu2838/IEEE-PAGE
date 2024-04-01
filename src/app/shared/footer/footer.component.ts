@@ -10,7 +10,7 @@ export class FooterComponent {
 
   enviarMensaje(nombre: string) {
     if (nombre.trim() !== '') {
-      const numeroWhatsapp = '+51936224203';
+      const numeroWhatsapp = '+51994422549';
       const mensaje = `¡Hola!, mi nombre es ${nombre}.\n Quisiera ser parte de la IEEE Computer Society`;
       const mensajeEncoded = encodeURIComponent(mensaje);
       const url = `https://wa.me/${numeroWhatsapp}?text=${mensajeEncoded}`;
