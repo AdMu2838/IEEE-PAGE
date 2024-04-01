@@ -1,3 +1,17 @@
+# Librerias utilizadas
+- Angular Material 16.2.14
+- Bootstrap 5.3.3
+- Bootstrap-icons 1.11.3
+- ng-Bootstrap 15.1.2
+
+# Node
+- Version 18
+## Componentes Generales
+# Header
+
+# Vista Inicio
+https://1drv.ms/i/s!ArZ8-4TEm0mxg1TVyomgDNuYGRe2?e=uC8tc9
+
 # ProyectoIeeePage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
