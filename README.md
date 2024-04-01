@@ -8,10 +8,7 @@
 - Version 18
 ## Componentes Generales
 # Header
-<img src="https://onedrive.live.com/embed?resid=B1499BC484FB7CB6%21468&authkey=!ACneu7y3SGTmKEI" alt="JuveR" width="300px">
-<div>
-  <iframe src="https://onedrive.live.com/embed?resid=B1499BC484FB7CB6%21468&authkey=!ACneu7y3SGTmKEI" width="98" height="120" frameborder="0" scrolling="no"></iframe>
-</div>
+<img src="https://pbs.twimg.com/media/EiAuAS8VoAA1-4T?format=jpg&name=large" alt="JuveR" width="300px">
 
 # Vista Inicio
 https://onedrive.live.com/embed?resid=B1499BC484FB7CB6%21468&authkey=!ACneu7y3SGTmKEI
