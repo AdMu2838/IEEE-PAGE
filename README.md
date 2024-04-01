@@ -48,14 +48,20 @@ https://drive.google.com/drive/u/2/folders/1mCHvagcirwT-sok97jaAeg2u-GFtLWTG
 - Calendario conectado al iframe de una cuenta de gmail (se esta usando una cuenta de prueba, agregar la de ustedes)
  
 <img src="https://drive.google.com/uc?id=13829sBws54amh6dqFOw6iqOIKGq7Bgrf" alt="Header" width="1000px">
+
 ## Equipo
 - Contiene a la directiva y comites de Trabajo
 - Cuenta con Hover para leer mas informacion
+
 <img src="https://drive.google.com/uc?id=1fZyVhpgqo-xVAFQoTBs_bLp7gemNJdbR" alt="Header" width="1000px">
 
  <img src="https://drive.google.com/uc?id=1n_iTxYhR5IDNNfGeTe1T_wD2k5PgHS9G" alt="Header" width="1000px">
+
+ 
 # Funciones adicionales
+
 ## Modo Oscuro
+
 - Ajustable segun la configuracion del navegador (modo oscuro o modo claro)
 <img src="https://drive.google.com/uc?id=1DR6psXWMeLPrm1923AKwzUhJl7JUmvH8" alt="Header" width="1000px">
 <img src="https://drive.google.com/uc?id=1RdEaq6UDPNbMhzox_k7SC5QEJpKYyvER" alt="Header" width="1000px">
