@@ -3,7 +3,7 @@
   padding: 0;
 }
 .container-section {
-  margin-top: 40px;
+  margin-top: 6vw;
 }
 
 /*PORTADA*/
@@ -95,7 +95,7 @@
   align-items: center;
   width: 80%;
   border-radius: 3vw;
-  box-shadow: 0 0 5vw rgba(255,163,0, 0.3);
+  box-shadow: 0 0 3vw rgba(255,163,0, 0.3);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -199,6 +199,7 @@
 .img-comunity img {
   width: 100%;
   height: auto;
+  border-radius: 4vw;
 }
 
 .container-section h3 {
